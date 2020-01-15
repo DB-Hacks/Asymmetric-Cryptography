@@ -1,4 +1,4 @@
-package asymmetric;
+package RSA;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;

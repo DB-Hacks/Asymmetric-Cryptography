@@ -1,4 +1,4 @@
-package asymmetric;
+package RSA;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -6,7 +6,6 @@ import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.spec.RSAPrivateKeySpec;
 import java.security.spec.RSAPublicKeySpec;
-
 import javax.crypto.Cipher;
 
 public class RSA_ECB_NoPadding_nUnknown {

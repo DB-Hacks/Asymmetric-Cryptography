@@ -1,4 +1,4 @@
-package asymmetric;
+package RSA;
 
 import java.math.BigInteger;
 import java.security.KeyFactory;
@@ -9,7 +9,7 @@ import java.security.spec.RSAPublicKeySpec;
 
 import javax.crypto.Cipher;
 
-import util.CryptoTools;
+import Utility.CryptoTools;
 
 public class RSA_ECB_NoPadding {
 	public static void main(String[] args) throws Exception
