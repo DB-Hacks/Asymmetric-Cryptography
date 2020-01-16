@@ -10,25 +10,21 @@ public class MRT {
 		BigInteger e = n.subtract(BigInteger.ONE);
 		boolean test = false;
 		if(b.modPow(e, n).equals(BigInteger.ONE)) {
-			System.out.println(n);
-			System.out.println(b);
-			System.out.println(e);
-			System.out.println(b.modPow(e, n));
-			System.out.println("composite 1");
+			System.out.println("composite");	//Test Case: composite
 		}
 		else {
 			while(test == false) {
 				if(e.mod(BigInteger.TWO) != BigInteger.ZERO) {
-					System.out.println("Inconclusive 1");
+					System.out.println("Inconclusive");
 					test = true;
 				}
 				e = e.divide(BigInteger.TWO);
 				if(b.modPow(e, n) == n.subtract(BigInteger.ONE)) {
-					System.out.println("Inconclusive 2");
+					System.out.println("Inconclusive");
 					test = true;
 				}
 				else if(b.modPow(e, n) != BigInteger.ONE) {
-					System.out.println("composite 2");
+					System.out.println("composite");
 					test = true;
 				}
 			}
